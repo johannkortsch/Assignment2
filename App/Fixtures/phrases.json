@@ -1,0 +1,22 @@
+{
+    "General":[
+        {
+            "english":"Hello!",
+            "finish":"Hei!"
+        },
+        {
+            "english":"Hey!!",
+            "finish":"Moi!"
+        }
+    ],
+    "Flirten":[
+        {
+            "english":"May I give you a drink?",
+            "finish":"Voinko tarjota jotain juotavaa?"
+        },
+        {
+            "english":"What are your plans for tonight??",
+            "finish":"Onko sinulla suunnitelmia täksi illaksi?"
+        }
+    ]
+}

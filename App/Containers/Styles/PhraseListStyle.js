@@ -26,7 +26,7 @@ export default StyleSheet.create({
   boldLabel: {
     fontWeight: 'bold',
     alignSelf: 'center',
-    color: Colors.text,
+    color: Colors.charcoal,
     textAlign: 'center',
     marginBottom: Metrics.smallMargin
   },
