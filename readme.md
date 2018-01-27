@@ -1,131 +1,36 @@
-[![Build Status](https://semaphoreci.com/api/v1/jbosse/ignite-expo-boilerplate/branches/master/badge.svg)](https://semaphoreci.com/jbosse/ignite-expo-boilerplate)
-[![Maintainability](https://api.codeclimate.com/v1/badges/9b673e2d752791ec2dff/maintainability)](https://codeclimate.com/github/jbosse/ignite-expo-boilerplate/maintainability)
+#  QuickPhrase
+[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](http://standardjs.com/)
 
-# Ignite Expo Boilerplate
+* Standard compliant React Native App Utilizing [Ignite](https://github.com/infinitered/ignite)
 
-## Ignite IR Fork full of Expo.io Goodness
+## :arrow_up: How to Setup
 
-This is a fork of the [Infinite Red Boilerplate](https://github.com/infinitered/ignite-ir-boilerplate) that has been modified to work with [Expo.io](https://docs.expo.io/versions/latest/index.html).
+**Step 1:** git clone this repo:
 
-Currently includes:
+**Step 2:** cd to the cloned repo:
 
-* Expo React Native (https://github.com/expo/react-native/archive/sdk-23.0.0.tar.gz)
-* React Navigation
-* Redux
-* Redux Sagas
-* And more!
+**Step 3:** Install the Application with `yarn` or `npm i`
 
-## Quick Start
 
-When you've installed the [Ignite CLI](https://github.com/infinitered/ignite), you can get started with this boilerplate like this:
+## :arrow_forward: How to Run App
 
-```
-ignite new MyLatestCreation -b ignite-expo
-```
+1. cd to the repo
+2. Run Build for either OS
+  * run `yarn start`
 
-## Boilerplate walkthrough
+## :no_entry_sign: Standard Compliant
 
-Your `App` folder is where most of the goodies are found in an Ignite Next app. Let's walk through them in more detail. Start with `Containers/App.js` (described below) and work your way down the walkthrough in order.
+[![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
+This project adheres to Standard.  Our CI enforces this, so we suggest you enable linting to keep your project compliant during development.
 
-### Containers
+**To Lint on Commit**
 
-Containers are (mostly) full screens, although they can be sections of screens or application containers.
+This is implemented using [husky](https://github.com/typicode/husky). There is no additional setup needed.
 
-* `App.js` - your main application. We create a Redux store and configure it here
-* `RootContainer.js` - main view of your application. Contains your status bar and navigation component
-* `LaunchScreen.js` - this is the first screen shown in your application. It's loaded into the Navigation component
-* `LoginScreen.js` - an example login screen. Read the comments in there to learn more!
-* `Styles` - styling for each of the above containers and screens
+**Bypass Lint**
 
-To generate a new Container or Screen you can use the following generator commands:
+If you have to bypass lint for a special commit that you will come back and clean (pushing something to a branch etc.) then you can bypass git hooks with adding `--no-verify` to your commit command.
 
-* `ignite g container New` - Will create a `New.js` and also a `Styles/NewStyle.js`.
-* `ignite g list New` - The same as the `container` command, but it will give you a walkthrough to generate a ListView screen. Allowing you to even pick `FlatList` or not, grid, and some other options. 
-* `ignite g screen New` - Will create a `NewScreen.js` and also a `Styles/NewScreenStyle.js`. Important to mention that the `screen` generator will add the `Screen` on the file/class name to make easierto identify
+**Understanding Linting Errors**
 
-Those commands will also add the new container to the navigations file.
-
-### Navigation
-
-Your primary and other navigation components reside here.
-
-* `AppNavigation.js` - loads in your initial screen and creates your menu(s) in a StackNavigation
-* `Styles` - styling for the navigation
-
-### Components
-
-React components go here...pretty self-explanatory. We won't go through each in detail -- open each file to read the comments and view the code.
-
-To generate a new Component you can use the following generator commands:
-
-* `ignite g component New` - Will create a `New.js` and also a `Styles/NewStyle.js`.
-* `ignite g component path/New` - The same as above, but will use a relative path
-* `ignite g component --folder path` - An alternative to `ignite g component path/index`
-* `ignite g component --folder path new ` - An alternative to `ignite g component relativePath/New`
-
-### Storybook
-
-[Storybook](https://storybook.js.org/) has been setup to show off components in the different states. Storybook is a great way to develop and test components outside of use in your app. Simply run `npm run storybook` to get started. All stores are contained in the `*.story.js` files along side the components.
-
-### Themes
-
-Styling themes used throughout your app styles.
-
-* `ApplicationStyles.js` - app-wide styles
-* `Colors.js` - defined colors for your app
-* `Fonts.js` - defined fonts for your app
-* `Images.js` - loads and caches images used in your app
-* `Metrics.js` - useful measurements of things like navBarHeight
-
-### Config
-
-Initialize and configure things here.
-
-* `AppConfig.js` - simple React Native configuration here
-* `DebugConfig.js` - define how you want your debug environment to act
-* `ReactotronConfig.js` - configures [Reactotron](https://github.com/infinitered/reactotron) in your project (Note: this [will be extracted](https://github.com/infinitered/ignite/issues/779) into a plugin in the future)
-* `ReduxPersist.js` - configures Redux Persist (Note: this [will be extracted](https://github.com/infinitered/ignite/issues/780) into a plugin in the future)
-
-### Fixtures
-
-Contains json files that mimic API responses for quicker development. These are used by the `Services/FixtureApi.js` object to mock API responses.
-
-### Redux, Sagas
-
-Contains a preconfigured Redux and Redux-Sagas setup. Review each file carefully to see how Redux interacts with your application.
-
-Here again we have generators to help you out. You just have to use one of the following:
-
-* `ignite g redux Amazing` - Will generate and link the redux for `Amazing`.
-* `ignite g saga Amazing` - The same as above, but for the Sagas
-
-_TODO: explain more about Redux & Redux Sagas here_
-
-### Services
-
-Contains your API service and other important utilities for your application.
-
-* `Api.js` - main API service, giving you an interface to communicate with your back end
-* `ExamplesRegistry.js` - lets you view component and Ignite plugin examples in your app
-* `FixtureApi.js` - mocks your API service, making it faster to develop early on in your app
-* `ImmutablePersistenceTransform.js` - part of the redux-persist implementation (will be removed)
-* `RehydrationServices.js` - part of the redux-persist implementation (will be removed)
-
-### Lib
-
-We recommend using this folder for modules that can be extracted into their own NPM packages at some point.
-
-### Images
-
-Contains actual images (usually png) used in your application.
-
-### Transforms
-
-Helpers for transforming data between API and your application and vice versa. An example is provided that you can look at to see how it works.
-
-### Tests
-
-This folder (located as a sibling to `App`) contains sample Jest snapshot and unit tests for your application.
-
-If you would like to have the `ignite generate` command include the generation of tests when avaiable, add 
-`"test": "jest"` or `"test": "ava"` to `./ignite/ignite.json`, depending on the test runner you are using.
+The linting rules are from JS Standard and React-Standard.  [Regular JS errors can be found with descriptions here](http://eslint.org/docs/rules/), while [React errors and descriptions can be found here](https://github.com/yannickcr/eslint-plugin-react).
