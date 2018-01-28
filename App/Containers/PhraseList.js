@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { View, ListView, Text, TouchableOpacity, Clipboard, TextInput, Picker, PickerItem } from 'react-native'
+import { View, ListView, Text, TouchableOpacity, Clipboard, TextInput, Picker, PickerItem, Alert, Share, OpenSelectDialogOptions } from 'react-native'
 import { connect } from 'react-redux'
 
 // For empty lists
@@ -58,7 +58,19 @@ class PhraseList extends Component {
     // später ggf. componentWillReceiveProps für List Update
 
       return (
-      <TouchableOpacity style={styles.row} onPress={() => Clipboard.setString(rowData.finish)}>
+      <TouchableOpacity style={styles.row} 
+      onPress={() => Clipboard.setString(rowData.finish)}
+      onPress={() => Alert.alert(
+        'Copied to Clipboard!',
+        'Just insert your phrase whereever you want. Or share directly.',
+        [
+          {text: 'Ok', onPress: () => console.log('OK Pressed')},
+          {text: 'Share now', onPress: () => Share.share({"title": "Finish Phrase", "message": "{rowData.finish}"})}
+        ],
+        { cancelable: false }
+      )}
+      //onPress={() => Share.share({"title": "Phrase", "message": "{rowData.finish}"})}
+      >
         <Text style={styles.boldLabel}>{rowData.english}</Text>
         <Text style={styles.label}>{rowData.finish}</Text>
       </TouchableOpacity>
