@@ -2,15 +2,18 @@
     "Greetings / Goodbyes":[
         {
             "english":"Hello!",
-            "finish":"Hei!"
+            "finish":"Hei!",
+            "german": "Hallo!"
         },
         {
             "english":"Hello!",
-            "finish":"Terve!"
+            "finish":"Terve!",
+            "german":"Hallo!"
         },
         {
             "english":"Hi!",
-            "finish":"Moi!"
+            "finish":"Moi!",
+            "german":"Hey!"
         },
         {
             "english":"Welcome!",
@@ -52,11 +55,13 @@
     "Smalltalk":[
         {
             "english":"Excuse me!",
-            "finish":"Anteeksi!"
+            "finish":"Anteeksi!",
+            "german":"Entschuldigung!"
         },
         {
             "english":"How are you?",
-            "finish":"Kuka sinä olet?"
+            "finish":"Kuka sinä olet?",
+            "german":"Wie geht es dir?"
         },
         {
             "english":"I'm fine, thank you.",
