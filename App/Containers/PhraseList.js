@@ -62,14 +62,13 @@ class PhraseList extends Component {
       onPress={() => Clipboard.setString(rowData.finish)}
       onPress={() => Alert.alert(
         'Copied to Clipboard!',
-        'Just insert your phrase whereever you want. Or share directly.',
+        'Just insert your phrase whereever you want. Or share it directly.',
         [
           {text: 'Ok', onPress: () => console.log('OK Pressed')},
           {text: 'Share now', onPress: () => Share.share({"title": "Finish Phrase", "message": "{rowData.finish}"})}
         ],
         { cancelable: false }
       )}
-      //onPress={() => Share.share({"title": "Phrase", "message": "{rowData.finish}"})}
       >
         <Text style={styles.boldLabel}>{rowData.english}</Text>
         <Text style={styles.label}>{rowData.finish}</Text>
@@ -109,8 +108,7 @@ class PhraseList extends Component {
   render () {
     return (
           
-        <View style={styles.container}>
-
+      /*  <View style={styles.container}>
         <Picker
           style = {styles.picker}
           selectedValue={this.state.language1}
@@ -127,7 +125,9 @@ class PhraseList extends Component {
           <Picker.Item label="Finnish" value="finish" />
           <Picker.Item label="German" value="german" />
         </Picker>
+        */
 
+        <View style={styles.container}>
         <ListView
           renderSectionHeader={this.renderHeader}
           contentContainerStyle={styles.listContent}
