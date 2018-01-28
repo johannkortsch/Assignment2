@@ -26,7 +26,7 @@ export default StyleSheet.create({
   boldLabel: {
     fontWeight: 'bold',
     alignSelf: 'center',
-    color: Colors.charcoal,
+    color: Colors.text,
     textAlign: 'center',
     marginBottom: Metrics.smallMargin
   },
@@ -39,5 +39,9 @@ export default StyleSheet.create({
     justifyContent: 'space-around',
     flexDirection: 'row',
     flexWrap: 'wrap'
+  },
+  //bearbeiten: evtl  mit: <Item label="blue" color="blue" value="blue" />
+  picker: {
+    backgroundColor: Colors.frost,
   }
 })

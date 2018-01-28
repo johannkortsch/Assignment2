@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { View, ListView, Text, TouchableOpacity, Clipboard, TextInput } from 'react-native'
+import { View, ListView, Text, TouchableOpacity, Clipboard, TextInput, Picker, PickerItem } from 'react-native'
 import { connect } from 'react-redux'
 
 // For empty lists
@@ -34,7 +34,9 @@ class PhraseList extends Component {
 
     // Datasource is always in state
     this.state = {
-      dataSource: ds.cloneWithRowsAndSections(dataObjects)
+      dataSource: ds.cloneWithRowsAndSections(dataObjects),
+      language1: "english",
+      language2: "finish"
     }
   }
 
@@ -46,16 +48,23 @@ class PhraseList extends Component {
   * e.g.
     return <MyCustomCell title={rowData.title} description={rowData.description} />
   *************************************************************/
+  
+  
   renderRow (rowData, sectionID) {
     // You can condition on sectionID (key as string), for different cells
     // in different sections
-    return (
+
+    // to do: Möglichkeit finden, um rowData.language Wert aus state language1/2 zu nutzen, je nach Picker Auswahl
+    // später ggf. componentWillReceiveProps für List Update
+
+      return (
       <TouchableOpacity style={styles.row} onPress={() => Clipboard.setString(rowData.finish)}>
         <Text style={styles.boldLabel}>{rowData.english}</Text>
         <Text style={styles.label}>{rowData.finish}</Text>
       </TouchableOpacity>
     )
   }
+
 
   /* ***********************************************************
   * STEP 4
@@ -87,7 +96,26 @@ class PhraseList extends Component {
 
   render () {
     return (
-      <View style={styles.container}>
+          
+        <View style={styles.container}>
+
+        <Picker
+          style = {styles.picker}
+          selectedValue={this.state.language1}
+          onValueChange={(itemValue, itemIndex) => this.setState({language1: itemValue})}>
+          <Picker.Item label="English" value="english" />
+          <Picker.Item label="Finnish" value="finish" />
+          <Picker.Item label="German" value="german" />
+        </Picker>
+        <Picker
+          style = {styles.picker}
+          selectedValue={this.state.language2}
+          onValueChange={(itemValue, itemIndex) => this.setState({language2: itemValue})}>
+          <Picker.Item label="English" value="english" />
+          <Picker.Item label="Finnish" value="finish" />
+          <Picker.Item label="German" value="german" />
+        </Picker>
+
         <ListView
           renderSectionHeader={this.renderHeader}
           contentContainerStyle={styles.listContent}
