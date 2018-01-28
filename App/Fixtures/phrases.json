@@ -43,7 +43,7 @@
         {
             "english":"See you tomorrow!",
             "finish":"Nähdään huomenna!"
-        },
+        }
         
         
     ],
@@ -75,7 +75,7 @@
             "finish":"Kuinka vanha sinä olet?"
         },
         {
-            "english":"I'm....years old.",
+            "english":"I'm...years old.",
             "finish":"Olen...vuotta vanha."
         },
         {
@@ -85,7 +85,7 @@
         {
             "english":"My name is...",
             "finish":"Minun nimi on..."
-        },
+        }
     ],
     
     
@@ -141,7 +141,7 @@
         {
             "english":"It was nice talking to you!",
             "finish":"Oli todella mukavaa jutella kanssasi!"
-        },  
+        }
    
     ],
     
@@ -155,11 +155,11 @@
             "finish":"Voisitko näyttää kartalta missä sen on?"
         },
         {
-            "english":"Where can I found a toilet?",
-            "finish":"Mistä täällä on WC?
+            "english":"Where can I find a toilet?",
+            "finish":"Mistä täällä on WC?"
         },
         {
-            "english":"Where can I found a bank/exchange office?",
+            "english":"Where can I find a bank/exchange office?",
             "finish":"Mistä täällä on pankki / rahanvaihtopiste?"
         },
         {
@@ -169,7 +169,7 @@
          {
              "english":"Where can I buy a train ticket?",
              "finish":"Mistä voin ostaa bussi-/junalipun?"
-         },
+         }
          
     ],
     
@@ -213,7 +213,7 @@
         {
             "english":"The food was very delicious!",
             "finish":"Ruoka oli herkullista!"
-        },
+        }
  
     ],
     
@@ -269,12 +269,8 @@
         {
             "english":"Does it look well on me?",
             "finish":"Näyttääkö tämä hyvältä päälläni?"
-        },
-        
-        
-    ],
-    
-    
-    
-    
+        }
+          
+    ]
+      
 }
