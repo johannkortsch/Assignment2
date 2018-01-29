@@ -17,35 +17,43 @@
         },
         {
             "english":"Welcome!",
-            "finish":"Tervetuloa!"
+            "finish":"Tervetuloa!",
+            "german":"Willkommen!"
         },
         {
             "english":"Morning!",
-            "finish":"Huomenta!"
+            "finish":"Huomenta!",
+            "german":"Morgen!"
         },
         {
             "english":"Good morning!",
-            "finish":"Hyvää huomenta!"
+            "finish":"Hyvää huomenta!",
+            "german":"Guten Morgen!"
         },
         {
             "english":"Good afternoon!",
-            "finish":"Hyvää päivää!"
+            "finish":"Hyvää päivää!",
+            "german":"Guten Mittag!"
         },
         {
             "english":"Good evening!",
-            "finish":"Hyvää iltaa!"
+            "finish":"Hyvää iltaa!",
+            "german":"Guten Abend!"
         },
         {
             "english":"Good night!",
-            "finish":"Hyvää yötä!"
+            "finish":"Hyvää yötä!",
+            "german":"Gute Nacht!"
         },
         {
             "english":"Goodbye!",
-            "finish":"Näkemiin!"
+            "finish":"Näkemiin!",
+            "german":"Tschüss!"
         },
         {
             "english":"See you tomorrow!",
-            "finish":"Nähdään huomenna!"
+            "finish":"Nähdään huomenna!",
+            "german":"Bis morgen!"
         }
         
         
@@ -65,31 +73,38 @@
         },
         {
             "english":"I'm fine, thank you.",
-            "finish":"Minulle kuuluu hyvää, kiitos."
+            "finish":"Minulle kuuluu hyvää, kiitos.",
+            "german":"Mir geht es gut, danke!"
         },
         {
             "english":"How about you?",
-            "finish":"Entä sinulle?"
+            "finish":"Entä sinulle?",
+            "german":"Und dir?"
         },
         {
             "english":"Quite alright, thank you.",
-            "finish":"Ihan hyvää, kiitos."
+            "finish":"Ihan hyvää, kiitos.",
+            "german":"Ganz gut, danke."
         },
         {
             "english":"How old are you?",
-            "finish":"Kuinka vanha sinä olet?"
+            "finish":"Kuinka vanha sinä olet?",
+            "german":"Wie alt bist du?"
         },
         {
             "english":"I'm...years old.",
-            "finish":"Olen...vuotta vanha."
+            "finish":"Olen...vuotta vanha.",
+            "german":"Ich bin...Jahre alt."
         },
         {
             "english":"What is your name?",
-            "finish":"Mikä sinun nimi on?"
+            "finish":"Mikä sinun nimi on?",
+            "german":"Wie ist dein Name?"
         },
         {
             "english":"My name is...",
-            "finish":"Minun nimi on..."
+            "finish":"Minun nimi on...",
+            "german":"Mein Name ist..."
         }
     ],
     
@@ -97,55 +112,68 @@
     "Flirten":[
         {
             "english":"May I give you a drink?",
-            "finish":"Voinko tarjota jotain juotavaa?"
+            "finish":"Voinko tarjota jotain juotavaa?",
+            "german":"Darf ich dir einen Drink ausgeben?"
         },
         {
             "english":"What are your plans for tonight?",
-            "finish":"Onko sinulla suunnitelmia täksi illaksi?"
+            "finish":"Onko sinulla suunnitelmia täksi illaksi?",
+            "german":"Was sind deine Pläne für heute Abend?"
         },
         {
             "english":"Would you like to go out for lunch/dinner with me?",
-            "finish":"Haluaisitko lounastaa/lähteä illalliselle kanssani joskus?"
+            "finish":"Haluaisitko lounastaa/lähteä illalliselle kanssani joskus?",
+            "german":"Möchtest du mir zum Mittagessen/Abendessen gehen?"
         },
         {
             "english":"You look gorgeous!",
-            "finish":"Näytät upealta!"
+            "finish":"Näytät upealta!",
+            "german":"Du siehst toll aus!"
         },
         {
             "english":"You are funny!",
-            "finish":"Olet hauska!"
+            "finish":"Olet hauska!",
+            "german":"Du bist witzig!"
         },
         {
             "english":"You have beautiful eyes!",
-            "finish":"Sinulla on kauniit silmät!"
+            "finish":"Sinulla on kauniit silmät!",
+            "german":"Du hast wunderschöne Augen!"
         },
         {
             "english":"Do you wanna dance?",
-            "finish":"Haluatko tanssia?"
+            "finish":"Haluatko tanssia?",
+            "german":"Willst du tanzen?"
         },
         {
             "english":"Would you like to watch a movie with me?",
-            "finish":"Haluaisitko katsoa elokuvan luonani?"
+            "finish":"Haluaisitko katsoa elokuvan luonani?",
+            "german":"Möchtest du einen Film mit mir schauen?"
         },
         {
             "english":"To me or to you?",
-            "finish":"Meille vai teille?"
+            "finish":"Meille vai teille?",
+            "german":"Zu mir oder zu dir?"
         },
         {
             "english":"Do you have plans for tonight?",
-            "finish":"Onko sinulla suunnitelmia täksi illaksi?"
+            "finish":"Onko sinulla suunnitelmia täksi illaksi?",
+            "german":"Hast du Pläne für heute Abend?"
         },
         {
             "english":"Would you like to come in for a coffee?",
-            "finish":"Haluaisitko tulla vielä kahville?"
+            "finish":"Haluaisitko tulla vielä kahville?",
+            "german":"Möchtest du auf einen Kaffee hereinkommen?"
         },
         {
             "english":"Thank you for the nice evening, good night!",
-            "finish":"Kiitos ihanasta illasta! Hauskaa loppuiltaa!"
+            "finish":"Kiitos ihanasta illasta! Hauskaa loppuiltaa!",
+            "german":"Viele Dank für den schönen Abend, gute Nacht!"
         },
         {
             "english":"It was nice talking to you!",
-            "finish":"Oli todella mukavaa jutella kanssasi!"
+            "finish":"Oli todella mukavaa jutella kanssasi!",
+            "german":"Es war schön mit dir zu reden!"
         }
    
     ],
@@ -153,27 +181,33 @@
      "On the way":[
         {
             "english":"I'm lost.",
-            "finish":"Olen eksyksissä."
+            "finish":"Olen eksyksissä.",
+            "german":"Ich habe mich verirrt!"
         },
         {
             "english":"Can you show me on the card where to go?",
-            "finish":"Voisitko näyttää kartalta missä sen on?"
+            "finish":"Voisitko näyttää kartalta missä sen on?",
+            "german":"Können Sie mir den Weg auf der Karte zeigen?"
         },
         {
             "english":"Where can I find a toilet?",
-            "finish":"Mistä täällä on WC?"
+            "finish":"Mistä täällä on WC?",
+            "german":"Wo finde ich eine Toilette?"
         },
         {
             "english":"Where can I find a bank/exchange office?",
-            "finish":"Mistä täällä on pankki / rahanvaihtopiste?"
+            "finish":"Mistä täällä on pankki / rahanvaihtopiste?",
+            "german":"Wo finde ich einen Bankautomaten/ eine Wechselstube?"
         },
         {
             "english":"Could you recommend a good restaurant?",
-            "finish":"Onko lähistöllä jokin hyvää ravintola?"
+            "finish":"Onko lähistöllä jokin hyvää ravintola?",
+            "german":"Können Sie mir ein Restaurant empfehlen?"
         },
          {
              "english":"Where can I buy a train ticket?",
-             "finish":"Mistä voin ostaa bussi-/junalipun?"
+             "finish":"Mistä voin ostaa bussi-/junalipun?",
+             "german":"Wo kann man ein Zugticket kaufen?"
          }
          
     ],
@@ -181,43 +215,48 @@
     "Going out for dinner":[
         {
             "english":"I would like to reserve a table for _ [number of people] _ people around _ [time] _.",
-            "finish":"Haluaisin varata pöydän _[ihmisten määrä]_ henkilölle."
+            "finish":"Haluaisin varata pöydän _[ihmisten määrä]_ henkilölle.",
+            "german":"Ich würde gerne einen Tisch für _ [Anzahl Gäste] _ Leute gegen _ [Uhrzeit] _ reservieren."
         },
         {
             "english":"A table for _ [number of persons] _ persons, please.",
-            "finish":"Pöytä _[ihmisten määrä]_, kiitos."
+            "finish":"Pöytä _[ihmisten määrä]_, kiitos.",
+            "german":"Ein Tisch für _ [Anzahl Gäste] _Personen, bitte."
         },
         {
             "english":"Can I pay by credit card?",
-            "finish":"Hyväksyttekö luottokortin?"
+            "finish":"Hyväksyttekö luottokortin?",
+            "german":"Kann ich mit Kreditkarte zahlen?"
         },
         {
             "english":"Do you also have vegetarian food on offer?",
-            "finish":"Onko teillä kasvisruokaa?"
-        },
-        {
-            "english":"Can I pay by credit card?",
-            "finish":"Hyväksyttekö luottokortin?"
+            "finish":"Onko teillä kasvisruokaa?",
+            "german":"Bieten sie auch vegetarisch an?"
         },
         {
             "english":"Can I have the menu, please?",
-            "finish":"Voisinko nähdä ruokalistan?"
+            "finish":"Voisinko nähdä ruokalistan?",
+            "german":"Kann ich die Menükarte haben, bitte?"
         },
         {
             "english":"Excuse me, we would like to order, please.",
-            "finish":"Anteeksi, haluaisimme tilata."
+            "finish":"Anteeksi, haluaisimme tilata.",
+            "german":"Entschuldigung, wir würden gerne bestellen, bitte."
         },
         {
             "english":"What can you recommend from the menu?",
-            "finish":"Mitä suosittelet ruokalistalta?"
+            "finish":"Mitä suosittelet ruokalistalta?",
+            "german":"Was können sie von der Karte empfehlen?"   
         },
         {
             "english":"We would like to pay, please.",
-            "finish":"Saisimmeko laskun, kiitos?"
+            "finish":"Saisimmeko laskun, kiitos?",
+            "german":"Wir möchten gerne zahlen, bitte."
         },
         {
             "english":"The food was very delicious!",
-            "finish":"Ruoka oli herkullista!"
+            "finish":"Ruoka oli herkullista!",
+            "german":"Das Essen war sehr lecker!"
         }
  
     ],
@@ -225,55 +264,68 @@
     "Going Shopping":[
         {
             "english":"I am just looking around.",
-            "finish":"Katselen vain."
+            "finish":"Katselen vain.",
+            "german":"Ich sehe mich nur um."
         },
         {
             "english":"How much is it?",
-            "finish":"Paljonko tämä maksaa?"
+            "finish":"Paljonko tämä maksaa?",
+            "german":"Wie viel kostet das?"
         },
         {
             "english":"When do you open/close?",
-            "finish":"Mihin aikaan avaatte / suljette?"
+            "finish":"Mihin aikaan avaatte / suljette?",
+            "german":"Wann öffnen/schließen sie?"
         },
         {
             "english":"I will buy it.",
-            "finish":"Ostan sen."
+            "finish":"Ostan sen.",
+            "german":"Ich werde es kaufen."
         },
         {
             "english":"Can I pay by credit card?",
-            "finish":"Hyväksyttekö luottokortin?"
+            "finish":"Hyväksyttekö luottokortin?",
+            "german":"Kann ich mit Kreditkarte zahlen?"
         },
         {
             "english":"Can I have the receipt, please?",
-            "finish":"Saisinko kuitin, kiitos?"
+            "finish":"Saisinko kuitin, kiitos?",
+            "german":"Kann ich die Quittung haben, bitte?"
         },
         {
             "english":"Can I have a bag please?",
-            "finish":"Saisinko kassin, kiitos?"
+            "finish":"Saisinko kassin, kiitos?",
+            "german":"Kann ich eine Tüte haben, bitte?"
         },
         {
             "english":"I would like to return this.",
-            "finish":"Haluaisin palauttaa tämän."
+            "finish":"Haluaisin palauttaa tämän.",
+            "german":"Ich möchte das gerne umtauschen."
         },
         {
             "english":"Can I try it once?",
-            "finish":"Voisinko sovittaa tätä?"
+            "finish":"Voisinko sovittaa tätä?",
+            "german":"Kann ich das anprobieren?"
         },
         {
             "english":"Where are the changing rooms?",
-            "finish":"Mistä löydän sovituskopit?"
+            "finish":"Mistä löydän sovituskopit?",
+            "german":"Wo befinden sich die Umkleidekabinen?"
         },
         {
             "english":"It is too small.",
-            "finish":"Se on liian pieni."
+            "finish":"Se on liian pieni.",
+            "german":"Das ist zu klein."
         },
         {
             "english":"It is too big.",
-            "finish":"Se on liian iso."
+            "finish":"Se on liian iso.",
+            "german":"Das ist zu groß."
         },
         {
             "english":"Does it look well on me?",
-            "finish":"Näyttääkö tämä hyvältä päälläni?"
+            "finish":"Näyttääkö tämä hyvältä päälläni?",
+            "german":"Sieht es gut an mir aus?"
         }
           
     ]
