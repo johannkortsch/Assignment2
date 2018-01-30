@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { Button, View, ScrollView, ListView, Text, TouchableOpacity, Clipboard, TextInput, Picker, PickerItem, Alert, Share, OpenSelectDialogOptions } from 'react-native'
 import { connect } from 'react-redux'
-import Emoji from 'emoji-datasource';
 
 import styles from './Styles/PhraseListStyle'
 
@@ -10,8 +9,6 @@ class PhraseList extends Component {
     super(props)
 
     const dataObjects = require ('../Fixtures/phrases.json')
-
-    //var Emoji = require ('react-native-emojis');
 
     const rowHasChanged = (r1, r2) => r1 !== r2
     const sectionHeaderHasChanged = (s1, s2) => s1 !== s2
@@ -26,12 +23,12 @@ class PhraseList extends Component {
       language2: "finish"
     }
   }
- 
-  
+
+
   renderRow (rowData, sectionID) {
 
       return (
-      <TouchableOpacity style={styles.row} 
+      <TouchableOpacity style={styles.row}
       onPress={() => Alert.alert(
         rowData.finish,'',
         //'Copy or Share?',
@@ -82,7 +79,7 @@ class PhraseList extends Component {
 
   render () {
     return (
-          
+
       /*  <View style={styles.container}>
         <Picker
           style = {styles.picker}
@@ -115,49 +112,50 @@ class PhraseList extends Component {
           stickySectionHeadersEnabled={true}
           //stickyHeaderIndices={[1]}
         />
-          
+
         <View style={styles.menu}>
-       
-        <Text>test</Text>
+
+
+
 
         <Button style={styles.Button}
           onPress={console.log('Cancel Pressed')}
-          title = "G"
+          title = "👋"
          // title= {Emoji name = 'wave'} -> Problem: erhält Object statt String
           color="#000000"
           accessibilityLabel="Greeting"
         />
         <Button style={styles.Button}
           onPress={console.log('Cancel Pressed')}
-          title="S"
+          title= "🤗"
           color="#000000"
           accessibilityLabel="Smalltalk"
         />
         <Button style={styles.Button}
           onPress={console.log('Cancel Pressed')}
-          title="F"
+          title="💏"
           color="#000000"
           accessibilityLabel="Flirting"
         />
         <Button style={styles.Button}
           onPress={console.log('Cancel Pressed')}
-          title="O"
+          title="🏃"
           color="#000000"
           accessibilityLabel="On the way"
         />
         <Button style={styles.Button}
           onPress={console.log('Cancel Pressed')}
-          title="D"
+          title="🍽️"
           color="#000000"
           accessibilityLabel="Dinner"
         />
         <Button style={styles.Button}
           onPress={console.log('Cancel Pressed')}
-          title="S"
+          title="🛍️"
           color="#000000"
           accessibilityLabel="Shopping"
         />
-        
+
         </View>
       </View>
     )

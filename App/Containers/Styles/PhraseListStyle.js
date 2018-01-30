@@ -6,7 +6,7 @@ export default StyleSheet.create({
     container: {
     flex: 1,
     backgroundColor: Colors.background
-  },  
+  },
   row: {
     width: Metrics.screenWidth - Metrics.doubleBaseMargin,
     // width: Metrics.screenWidth / 2 - Metrics.doubleBaseMargin,
@@ -62,11 +62,11 @@ export default StyleSheet.create({
   },
   menu: {
     //flex: 1,
-    marginHorizontal: Metrics.smallMargin,
+    marginHorizontal: Metrics.baseMargin,
     height: 50,
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignItems: 'center',
     backgroundColor: Colors.background,
-  },  
+  },
 })
