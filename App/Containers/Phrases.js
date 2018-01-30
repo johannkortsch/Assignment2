@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, View, FlatList, Text, TouchableOpacity, Alert, Clipboard, Share, FlatList, Animated} from 'react-native'
+import { Button, View, SectionList, Text, TouchableOpacity, Alert, Clipboard, Share, FlatList, Animated} from 'react-native'
 import { connect } from 'react-redux'
 
 // More info here: https://facebook.github.io/react-native/docs/sectionlist.html
@@ -8,7 +8,7 @@ import { connect } from 'react-redux'
 import styles from './Styles/PhraseListStyle'
 import index from 'axios';
 
-class Phrases extends Component {
+class Phrases extends React.PureComponent {
   /* ***********************************************************
   * STEP 1
   * This is an array of objects with the properties you desire
@@ -97,6 +97,7 @@ class Phrases extends Component {
     }
   }
 
+  //Korrigieren?
   scrollToIndex = () => {
     this.flatListRef.scrollToIndex({animated: true, index: 20});
   }
@@ -155,8 +156,8 @@ class Phrases extends Component {
   render () {
     return (
       <View style={styles.container}>
-        <FlatList
-          ref={(ref) => { this.flatListRef = ref; }}
+        <SectionList
+          //ref={(ref) => { this.flatListRef = ref; }}
           renderSectionHeader={this.renderSectionHeader}
           sections={this.state.data}
           contentContainerStyle={styles.listContent}
