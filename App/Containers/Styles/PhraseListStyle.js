@@ -3,18 +3,19 @@ import { ApplicationStyles, Metrics, Colors } from '../../Themes'
 
 export default StyleSheet.create({
   ...ApplicationStyles.screen,
-  container: {
+    container: {
     flex: 1,
     backgroundColor: Colors.background
   },
   row: {
-    width: Metrics.screenWidth / 2 - Metrics.doubleBaseMargin,
+    width: Metrics.screenWidth - Metrics.doubleBaseMargin,
+    // width: Metrics.screenWidth / 2 - Metrics.doubleBaseMargin,
     height: 100,
     justifyContent: 'center',
     alignItems: 'center',
     margin: Metrics.baseMargin,
-    backgroundColor: Colors.frost,
-    borderRadius: Metrics.smallMargin
+    backgroundColor: Colors.phrase,
+    borderRadius: Metrics.smallMargin,
   },
   sectionHeader: {
     paddingTop: Metrics.doubleBaseMargin,
@@ -37,7 +38,7 @@ export default StyleSheet.create({
   },
   listContent: {
     justifyContent: 'space-around',
-    flexDirection: 'row',
+    //flexDirection: 'row',
     flexWrap: 'wrap'
   },
   //bearbeiten: evtl  mit: <Item label="blue" color="blue" value="blue" />
