@@ -1,10 +1,10 @@
 {
-  "name": "QuickPhrase",
-  "displayName": "QuickPhrase",
+  "name": "quickphrase",
+  "displayName": "quickphrase",
   "expo": {
-    "name": "QuickPhrase",
-    "description": "No description",
-    "slug": "QuickPhrase",
+    "name": "quickphrase",
+    "description": "your translation in every situation",
+    "slug": "quickphrase",
     "privacy": "public",
     "sdkVersion": "25.0.0",
     "version": "1.0.0",
