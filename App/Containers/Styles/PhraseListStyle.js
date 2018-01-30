@@ -22,7 +22,7 @@ export default StyleSheet.create({
     paddingTop: Metrics.doubleBaseMargin,
     width: Metrics.screenWidth,
     alignSelf: 'center',
-    margin: Metrics.baseMargin,
+    marginBottom: Metrics.baseMargin,
     backgroundColor: Colors.background,
   },
   boldLabel: {
