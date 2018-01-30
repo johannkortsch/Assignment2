@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { View, ScrollView, ListView, Text, TouchableOpacity, Clipboard, TextInput, Picker, PickerItem, Alert, Share, OpenSelectDialogOptions } from 'react-native'
+import { Button, View, ScrollView, ListView, Text, TouchableOpacity, Clipboard, TextInput, Picker, PickerItem, Alert, Share, OpenSelectDialogOptions } from 'react-native'
 import { connect } from 'react-redux'
 
 import styles from './Styles/PhraseListStyle'
@@ -112,6 +112,47 @@ class PhraseList extends Component {
           stickySectionHeadersEnabled={true}
           //stickyHeaderIndices={[1]}
         />
+       
+        <View style={styles.menu}>
+       
+        <Button style={styles.Button}
+          onPress={console.log('Cancel Pressed')}
+          title="G"
+          color="#000000"
+          accessibilityLabel="Greeting"
+        />
+        <Button style={styles.Button}
+          onPress={console.log('Cancel Pressed')}
+          title="S"
+          color="#000000"
+          accessibilityLabel="Smalltalk"
+        />
+        <Button style={styles.Button}
+          onPress={console.log('Cancel Pressed')}
+          title="F"
+          color="#000000"
+          accessibilityLabel="Flirting"
+        />
+        <Button style={styles.Button}
+          onPress={console.log('Cancel Pressed')}
+          title="O"
+          color="#000000"
+          accessibilityLabel="On the way"
+        />
+        <Button style={styles.Button}
+          onPress={console.log('Cancel Pressed')}
+          title="D"
+          color="#000000"
+          accessibilityLabel="Dinner"
+        />
+        <Button style={styles.Button}
+          onPress={console.log('Cancel Pressed')}
+          title="S"
+          color="#000000"
+          accessibilityLabel="Shopping"
+        />
+        
+        </View>
       </View>
     )
   }
