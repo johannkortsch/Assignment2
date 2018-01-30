@@ -1,31 +1,15 @@
 import React, { Component } from 'react'
-import { View, ListView, Text, TouchableOpacity, Clipboard, TextInput, Picker, PickerItem, Alert, Share, OpenSelectDialogOptions } from 'react-native'
+import { Button, View, ScrollView, ListView, Text, TouchableOpacity, Clipboard, TextInput, Picker, PickerItem, Alert, Share, OpenSelectDialogOptions } from 'react-native'
 import { connect } from 'react-redux'
 
-// For empty lists
-// import AlertMessage from '../Components/AlertMessage'
-
-// Styles
 import styles from './Styles/PhraseListStyle'
 
 class PhraseList extends Component {
   constructor (props) {
     super(props)
 
-    /* ***********************************************************
-    * STEP 1
-    * This is an array of objects with the properties you desire
-    * Usually this should come from Redux mapStateToProps
-    *************************************************************/
     const dataObjects = require ('../Fixtures/phrases.json')
 
-    /* ***********************************************************
-    * STEP 2
-    * Teach datasource how to detect if rows are different
-    * Make this function fast!  Perhaps something like:
-    *   (r1, r2) => r1.id !== r2.id}
-    *   The same goes for sectionHeaderHasChanged
-    *************************************************************/
     const rowHasChanged = (r1, r2) => r1 !== r2
     const sectionHeaderHasChanged = (s1, s2) => s1 !== s2
 
@@ -39,35 +23,23 @@ class PhraseList extends Component {
       language2: "finish"
     }
   }
-
-  /* ***********************************************************
-  * STEP 3
-  * `renderRow` function -How each cell/row should be rendered
-  * It's our best practice to place a single component here:
-  *
-  * e.g.
-    return <MyCustomCell title={rowData.title} description={rowData.description} />
-  *************************************************************/
-  
+ 
   
   renderRow (rowData, sectionID) {
-    // You can condition on sectionID (key as string), for different cells
-    // in different sections
-
-    // to do: Möglichkeit finden, um rowData.language Wert aus state language1/2 zu nutzen, je nach Picker Auswahl
-    // später ggf. componentWillReceiveProps für List Update
 
       return (
       <TouchableOpacity style={styles.row} 
-      onPress={() => Clipboard.setString(rowData.finish)}
       onPress={() => Alert.alert(
-        'Copied to Clipboard!',
-        'Just insert your phrase whereever you want. Or share it directly.',
+        rowData.finish,'',
+        //'Copy or Share?',
+        //'"'+rowData.finish+'"',
+        //'Just copy & paste your QuickPhrase. Or share it directly.',
         [
-          {text: 'Ok', onPress: () => console.log('OK Pressed')},
-          {text: 'Share now', onPress: () => Share.share({"title": "Finish Phrase", "message": "{rowData.finish}"})}
+          {text: 'Copy', onPress: () => Clipboard.setString(rowData.finish)},
+          {text: 'Share now', onPress: () => Share.share({"title": "Finish Phrase", "message": rowData.finish})},
+          {text: 'Cancel', onPress: () => console.log('Cancel Pressed'), style: 'destructive'},
         ],
-        { cancelable: false }
+        { cancelable: true }
       )}
       >
         <Text style={styles.boldLabel}>{rowData.english}</Text>
@@ -127,6 +99,8 @@ class PhraseList extends Component {
         </Picker>
         */
 
+      //<Text style={styles.AppTitle}>QuickPhrase</Text>
+
         <View style={styles.container}>
         <ListView
           renderSectionHeader={this.renderHeader}
@@ -134,9 +108,51 @@ class PhraseList extends Component {
           dataSource={this.state.dataSource}
           onLayout={this.onLayout}
           renderRow={this.renderRow}
-          enableEmptySections
+          //enableEmptySections
+          stickySectionHeadersEnabled={true}
+          //stickyHeaderIndices={[1]}
         />
-        <TextInput style = {{backgroundColor: 'white', height: 50, flexGrow: 1, textAlign: 'center'}}/>
+       
+        <View style={styles.menu}>
+       
+        <Button style={styles.Button}
+          onPress={console.log('Cancel Pressed')}
+          title="G"
+          color="#000000"
+          accessibilityLabel="Greeting"
+        />
+        <Button style={styles.Button}
+          onPress={console.log('Cancel Pressed')}
+          title="S"
+          color="#000000"
+          accessibilityLabel="Smalltalk"
+        />
+        <Button style={styles.Button}
+          onPress={console.log('Cancel Pressed')}
+          title="F"
+          color="#000000"
+          accessibilityLabel="Flirting"
+        />
+        <Button style={styles.Button}
+          onPress={console.log('Cancel Pressed')}
+          title="O"
+          color="#000000"
+          accessibilityLabel="On the way"
+        />
+        <Button style={styles.Button}
+          onPress={console.log('Cancel Pressed')}
+          title="D"
+          color="#000000"
+          accessibilityLabel="Dinner"
+        />
+        <Button style={styles.Button}
+          onPress={console.log('Cancel Pressed')}
+          title="S"
+          color="#000000"
+          accessibilityLabel="Shopping"
+        />
+        
+        </View>
       </View>
     )
   }
