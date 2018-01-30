@@ -214,12 +214,12 @@
     
     "Going out for dinner":[
         {
-            "english":"I would like to reserve a table for _ [number of people] _ people around _ [time] _.",
+            "english":"I would like to reserve a table for [amount] people around [time].",
             "finish":"Haluaisin varata pöydän _[ihmisten määrä]_ henkilölle.",
             "german":"Ich würde gerne einen Tisch für _ [Anzahl Gäste] _ Leute gegen _ [Uhrzeit] _ reservieren."
         },
         {
-            "english":"A table for _ [number of persons] _ persons, please.",
+            "english":"A table for[amount] persons, please.",
             "finish":"Pöytä _[ihmisten määrä]_, kiitos.",
             "german":"Ein Tisch für _ [Anzahl Gäste] _Personen, bitte."
         },
