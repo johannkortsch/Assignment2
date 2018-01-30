@@ -22,14 +22,25 @@ export default StyleSheet.create({
     width: Metrics.screenWidth,
     alignSelf: 'center',
     margin: Metrics.baseMargin,
-    backgroundColor: Colors.background
+    backgroundColor: Colors.background,
   },
   boldLabel: {
     fontWeight: 'bold',
     alignSelf: 'center',
     color: Colors.text,
     textAlign: 'center',
-    marginBottom: Metrics.smallMargin
+    marginTop: Metrics.smallMargin,
+    marginBottom: Metrics.smallMargin,
+    fontSize: 16,
+  },
+  AppTitle: {
+    fontWeight: 'bold',
+    alignSelf: 'center',
+    color: Colors.text,
+    textAlign: 'center',
+    marginTop: Metrics.baseMargin,
+    marginBottom: Metrics.baseMargin,
+    fontSize: 20,
   },
   label: {
     alignSelf: 'center',

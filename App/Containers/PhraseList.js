@@ -29,15 +29,17 @@ class PhraseList extends Component {
 
       return (
       <TouchableOpacity style={styles.row} 
-      //onPress={() => Clipboard.setString(rowData.finish)}
       onPress={() => Alert.alert(
-        'Copy or Share?!',
-        'Just copy & paste your QuickPhrase. Or share it directly.',
+        rowData.finish,'',
+        //'Copy or Share?',
+        //'"'+rowData.finish+'"',
+        //'Just copy & paste your QuickPhrase. Or share it directly.',
         [
           {text: 'Copy', onPress: () => Clipboard.setString(rowData.finish)},
-          {text: 'Share now', onPress: () => Share.share({"title": "Finish Phrase", "message": rowData.finish})}
+          {text: 'Share now', onPress: () => Share.share({"title": "Finish Phrase", "message": rowData.finish})},
+          {text: 'Cancel', onPress: () => console.log('Cancel Pressed'), style: 'destructive'},
         ],
-        { cancelable: false }
+        { cancelable: true }
       )}
       >
         <Text style={styles.boldLabel}>{rowData.english}</Text>
@@ -96,6 +98,8 @@ class PhraseList extends Component {
           <Picker.Item label="German" value="german" />
         </Picker>
         */
+
+      //<Text style={styles.AppTitle}>QuickPhrase</Text>
 
         <View style={styles.container}>
         <ListView
