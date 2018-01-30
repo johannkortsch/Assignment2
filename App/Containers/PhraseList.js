@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Button, View, ScrollView, ListView, Text, TouchableOpacity, Clipboard, TextInput, Picker, PickerItem, Alert, Share, OpenSelectDialogOptions } from 'react-native'
 import { connect } from 'react-redux'
+import Emoji from 'emoji-datasource';
 
 import styles from './Styles/PhraseListStyle'
 
@@ -9,6 +10,8 @@ class PhraseList extends Component {
     super(props)
 
     const dataObjects = require ('../Fixtures/phrases.json')
+
+    //var Emoji = require ('react-native-emojis');
 
     const rowHasChanged = (r1, r2) => r1 !== r2
     const sectionHeaderHasChanged = (s1, s2) => s1 !== s2
@@ -112,12 +115,15 @@ class PhraseList extends Component {
           stickySectionHeadersEnabled={true}
           //stickyHeaderIndices={[1]}
         />
-       
+          
         <View style={styles.menu}>
        
+        <Text>test</Text>
+
         <Button style={styles.Button}
           onPress={console.log('Cancel Pressed')}
-          title="G"
+          title = "G"
+         // title= {Emoji name = 'wave'} -> Problem: erhält Object statt String
           color="#000000"
           accessibilityLabel="Greeting"
         />
