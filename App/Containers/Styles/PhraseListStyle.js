@@ -62,6 +62,7 @@ export default StyleSheet.create({
   },
   menu: {
     //flex: 1,
+    marginHorizontal: Metrics.smallMargin,
     height: 50,
     flexDirection: 'row',
     justifyContent: 'space-between',
