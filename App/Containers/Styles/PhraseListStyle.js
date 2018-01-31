@@ -51,7 +51,7 @@ export default StyleSheet.create({
   listContent: {
     justifyContent: 'space-around',
     //flexDirection: 'row',
-    flexWrap: 'wrap'
+    //flexWrap: 'wrap'
   },
   //bearbeiten: evtl  mit: <Item label="blue" color="blue" value="blue" />
   button: {
