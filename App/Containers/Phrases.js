@@ -8,6 +8,10 @@ import index from 'axios';
 
 class Phrases extends React.PureComponent {
 
+    static navigationOptions = {
+        title: 'Greetings',
+      };
+
   state = {
     category: 'All',
   
@@ -92,6 +96,7 @@ class Phrases extends React.PureComponent {
 
 
   render () {
+    const { navigate } = this.props.navigation;
     return (
       <View style={styles.container}>
         <SectionList
