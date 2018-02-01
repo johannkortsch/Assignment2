@@ -1,8 +1,14 @@
 import { StackNavigator } from 'react-navigation'
 import Phrases from '../Containers/Phrases'
 import PhraseList from '../Containers/PhraseList'
-import PhraseList1 from '../Containers/PhraseList1'
 import LaunchScreen from '../Containers/LaunchScreen'
+import Dinner from '../Containers/Dinner'
+import Flirting from '../Containers/Flirting'
+import Greetings from '../Containers/Greetings'
+import OTW from '../Containers/OTW'
+import Shopping from '../Containers/Shopping'
+import Smalltalk from '../Containers/Smalltalk'
+
 
 import styles from './Styles/NavigationStyles'
 
@@ -12,17 +18,15 @@ const PrimaryNav = StackNavigator({
   Dinner: {screen: Dinner},
   Greetings: {screen: Greetings},
   Flirting: {screen: Flirting},
-  Greetings: {screen: Greetings},
   OTW: {screen: OTW},
   Shopping: {screen: Shopping},
   Smalltalk: {screen: Smalltalk},
   PhraseList: { screen: PhraseList },
-  PhraseList1: { screen: PhraseList1 },
   LaunchScreen: { screen: LaunchScreen }
 }, {
   // Default config for all screens
   headerMode: 'none',
-  initialRouteName: 'Greetings',
+  initialRouteName: 'Phrases',
   navigationOptions: {
     headerStyle: styles.header
   }

@@ -6,12 +6,16 @@ import { connect } from 'react-redux'
 import styles from './Styles/PhraseListStyle'
 import index from 'axios';
 
-class Greetings extends React.PureComponent {
+class Smalltalk extends React.PureComponent {
 
     static navigationOptions = {
-        title: 'Greetings',
+        title: 'Smalltalk',
       };
-    
+     
+      state = {
+        category: 'All',
+      
+      }
 
   renderItem ({section, item}) {
     return (
@@ -63,7 +67,7 @@ class Greetings extends React.PureComponent {
   keyExtractor = (item, index) => index
 
   // How many items should be kept im memory as we scroll?
-  oneScreensWorth = 20
+  oneScreensWorth = 50
 
 
   render () {
@@ -75,7 +79,7 @@ class Greetings extends React.PureComponent {
           renderSectionHeader={this.renderSectionHeader}
   
           sections={
-           greetingSection
+           smalltalkSection
           }
           contentContainerStyle={styles.listContent}
           data={this.state.dataObjects}
@@ -86,47 +90,39 @@ class Greetings extends React.PureComponent {
         />
         <View style={styles.menu}>
 
-       <Button style={styles.Button}
+        <Button style={styles.Button}
          onPress={() => navigate('Phrases')}
-         title="S"
-         color="#000000"
+         title="All"
          accessibilityLabel="All"
        />
        <Button style={styles.Button}
-         onPress={Console.log('hi')}
-         //onPress={console.log('Cancel Pressed')}
-         title = "G"
-         color="#000000"
+        onPress={() => navigate('Greetings')}
+         title = "👋"
          accessibilityLabel="Greeting"
        />
        <Button style={styles.Button}
-         onPress={Console.log('hi')}
-         title="S"
-         color="#000000"
+         onPress={() => navigate('Smalltalk')}
+         title="🤗"
          accessibilityLabel="Smalltalk"
        />
        <Button style={styles.Button}
-         onPress={Console.log('hi')}
-         title="F"
-         color="#000000"
+         onPress={() => navigate('Flirting')}
+         title="💏"
          accessibilityLabel="Flirting"
        />
        <Button style={styles.Button}
-         onPress={Console.log('hi')}
-         title="O"
-         color="#000000"
+         onPress={() => navigate('OTW')}
+         title="🏃"
          accessibilityLabel="On the way"
        />
        <Button style={styles.Button}
-         onPress={Console.log('hi')}
-         title="D"
-         color="#000000"
+         onPress={() => navigate('Dinner')}
+         title="🍽️"
          accessibilityLabel="Dinner"
        />
        <Button style={styles.Button}
-         onPress={Console.log('hi')}
-         title="S"
-         color="#000000"
+         onPress={() => navigate('Shopping')}
+         title="🛍️"
          accessibilityLabel="Shopping"
        />
        
@@ -147,7 +143,7 @@ const mapDispatchToProps = (dispatch) => {
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(Phrases)
+export default connect(mapStateToProps, mapDispatchToProps)(Smalltalk)
 
 
 const greetingSection = [

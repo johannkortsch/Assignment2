@@ -38,7 +38,7 @@ class Phrases extends React.PureComponent {
   }
 
   renderSectionHeader ({section}) {
-        return <View style={styles.sectionHeader}><Text style={styles.boldLabel}>{section.key}</Text></View>
+        return <View style={styles.sectionHeader}><Text style={styles.sectionLabel}>{section.key}</Text></View>
   
     }
   
@@ -92,7 +92,7 @@ class Phrases extends React.PureComponent {
   keyExtractor = (item, index) => index
 
   // How many items should be kept im memory as we scroll?
-  oneScreensWorth = 20
+  oneScreensWorth = 50
 
 
   render () {
@@ -135,46 +135,38 @@ class Phrases extends React.PureComponent {
         <View style={styles.menu}>
 
        <Button style={styles.Button}
-         onPress={this.press.bind('All')}
-         title="S"
-         color="#000000"
+         onPress={() => navigate('Phrases')}
+         title="All"
          accessibilityLabel="All"
        />
        <Button style={styles.Button}
-        onPress={this.press.bind('Greeting')}
-        //onPress={console.log('Cancel Pressed')}
-         title = "G"
-         color="#000000"
+        onPress={() => navigate('Greetings')}
+         title = "👋"
          accessibilityLabel="Greeting"
        />
        <Button style={styles.Button}
-         onPress={this.press.bind('Smalltalk')}
-         title="S"
-         color="#000000"
+         onPress={() => navigate('Smalltalk')}
+         title="🤗"
          accessibilityLabel="Smalltalk"
        />
        <Button style={styles.Button}
-         onPress={this.press.bind('Flirting')}
-         title="F"
-         color="#000000"
+         onPress={() => navigate('Flirting')}
+         title="💏"
          accessibilityLabel="Flirting"
        />
        <Button style={styles.Button}
-         onPress={this.press.bind('On the way')}
-         title="O"
-         color="#000000"
+         onPress={() => navigate('OTW')}
+         title="🏃"
          accessibilityLabel="On the way"
        />
        <Button style={styles.Button}
-         onPress={this.press.bind('Dinner')}
-         title="D"
-         color="#000000"
+         onPress={() => navigate('Dinner')}
+         title="🍽️"
          accessibilityLabel="Dinner"
        />
        <Button style={styles.Button}
-         onPress={this.press.bind('Shopping')}
-         title="S"
-         color="#000000"
+         onPress={() => navigate('Shopping')}
+         title="🛍️"
          accessibilityLabel="Shopping"
        />
        

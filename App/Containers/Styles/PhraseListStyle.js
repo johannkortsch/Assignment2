@@ -41,7 +41,7 @@ export default StyleSheet.create({
     textAlign: 'center',
     marginTop: Metrics.baseMargin,
     marginBottom: Metrics.baseMargin,
-    fontSize: 18,
+    fontSize: 19,
   },
   label: {
     alignSelf: 'center',
@@ -53,11 +53,11 @@ export default StyleSheet.create({
     //flexDirection: 'row',
     //flexWrap: 'wrap'
   },
-  //bearbeiten: evtl  mit: <Item label="blue" color="blue" value="blue" />
   button: {
     width: 1000,
     justifyContent: 'center',
     alignItems: 'center',
+    color: Colors.background,
     flex:1,
   },
   menu: {
