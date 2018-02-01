@@ -1,4 +1,4 @@
-import { StackNavigator } from 'react-navigation'
+import { StackNavigator, Animated, Easing } from 'react-navigation'
 import Phrases from '../Containers/Phrases'
 import PhraseList from '../Containers/PhraseList'
 import LaunchScreen from '../Containers/LaunchScreen'
@@ -28,8 +28,16 @@ const PrimaryNav = StackNavigator({
   headerMode: 'none',
   initialRouteName: 'Phrases',
   navigationOptions: {
-    headerStyle: styles.header
-  }
+    headerStyle: styles.header,
+   // animationEnabled: false
+  },
+  transitionConfig : () => ({
+  	transitionSpec: {
+  		duration: 0,
+  		//timing: Animated.timing(),
+  		//easing: Easing.step0(),
+  	},
+  }),
 })
 
 export default PrimaryNav

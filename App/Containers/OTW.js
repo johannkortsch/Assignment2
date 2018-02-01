@@ -38,7 +38,7 @@ class OTW extends React.PureComponent {
   }
 
   renderSectionHeader ({section}) {
-        return <View style={styles.sectionHeader}><Text style={styles.boldLabel}>{section.key}</Text></View>
+        return <View style={styles.sectionHeader}><Text style={styles.sectionLabel}>{section.key}</Text></View>
   
     }
   
